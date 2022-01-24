@@ -4,8 +4,9 @@
 #Các phương thức phù hợp để truy cập/chỉnh sửa các thuộc tính đó
 #Có phương thức attack(other_player) để tấn công nhân vật khác
 #Bổ sung thêm các thuộc tính như mana, skill để mỗi 2 lần tấn công bình thường thì có thể tấn công bằng kỹ năng
+from __future__ import annotations
 from dataclasses import dataclass
-from _future_ import annotations
+
 
 @dataclass
 class Character:
@@ -49,7 +50,7 @@ class Character:
             print(other.name + " đã 💀🪦")
             
 c1 = Character("Tú",10,2,100,0)
-c2 = Character("Quý",3,5,100,0)
+c2 = Character("Hiếu",3,5,100,0)
 
 c1.attack(c2)
 c2.attack(c1)
